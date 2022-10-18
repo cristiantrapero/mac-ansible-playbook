@@ -1,0 +1,66 @@
+downloads: /tmp/ansible-downloads
+
+configure_dotfiles: true
+configure_terminal: true
+configure_osx: true
+configure_dock: true
+configure_sudoers: true
+
+dotfiles_repo: https://github.com/cristiantrapero/dotfiles.git
+dotfiles_repo_accept_hostkey: true
+dotfiles_repo_local_destination: ~/repos/dotfiles
+dotfiles_files:
+  - .zshrc
+  - .gitignore
+
+homebrew_installed_packages:
+  - go
+  - mas
+  - autoconf
+  - bash-completion
+  - git
+  - gh
+  - gpg
+  - httpie
+  - iperf
+  - nmap
+  - nvm
+  - ssh-copy-id
+  - openssl
+  - pv
+  - wget
+  - curl
+  - wrk
+  - zsh-history-substring-search
+
+homebrew_cask_apps:
+  - docker
+  - firefox
+  - google-chrome
+  - slack
+  - sublime-text
+  - rectangle
+  - appcleaner
+  - iterm2
+  - visual-studio-code
+
+# mas_installed_apps:
+#   - { id: 1352778147, name: "Bitwarden" }
+#   - { id: 1444383602, name: "GoodNotes 5" }
+#   - { id: 462054704, name: "Microsoft Word" }
+#   - { id: 462062816, name: "Microsoft Powerpoint" }
+#   - { id: 462058435, name: "Microsoft Excel" }
+
+dockitems_persist:
+  - name: "Sublime Text"
+    path: "/Applications/Sublime Text.app/"
+    pos: 5
+  - name: "Visual Studio Code"
+    path: "/Applications/Visual Studio Code.app/"
+    pos: 6
+  - name: "Bitwarden"
+    path: "/Applications/Bitwarden.app/"
+    pos: 4
+  - name: "Google Chrome"
+    path: "/Applications/Google Chrome.app/"
+    pos: 3
