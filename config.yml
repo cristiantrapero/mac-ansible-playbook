@@ -19,6 +19,8 @@ dotfiles_files:
   - .bash_logout
   - .bash_profile
   - .gitconfig
+  - .ssh/config
+  - .aws/config
 
 homebrew_installed_packages:
   - go
@@ -40,6 +42,7 @@ homebrew_installed_packages:
   - wrk
   - zsh-history-substring-search
   - unzip
+  - awscli
 
 homebrew_cask_apps:
   - docker
@@ -108,6 +111,6 @@ dockitems_persist:
   - name: "Spotify"
     path: "/Applications/Spotify.app/"
     pos: 7
-  - name: "iTerm"
-    path: "/Applications/iTerm.app/"
+  - name: "Terminal"
+    path: "/Applications/Utilities/Terminal.app"
     pos: 8
