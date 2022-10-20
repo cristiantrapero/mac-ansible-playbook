@@ -1,17 +1,24 @@
 downloads: /tmp/ansible-downloads
 
-configure_dotfiles: true
+# configure_dotfiles: true
 configure_terminal: true
 configure_osx: true
 configure_dock: true
 configure_sudoers: false
 
-dotfiles_repo: https://github.com/cristiantrapero/dotfiles.git
+dotfiles_repo: git@github.com:cristiantrapero/dotfiles.git
 dotfiles_repo_accept_hostkey: true
-dotfiles_repo_local_destination: ~/.dotfiles
+dotfiles_repo_local_destination: ~/repos/dotfiles
 dotfiles_files:
   - .zshrc
   - .gitignore
+  - .osx
+  - .inputrc
+  - .functions
+  - .alias
+  - .bash_logout
+  - .bash_profile
+  - .gitconfig
 
 homebrew_installed_packages:
   - go
@@ -32,6 +39,7 @@ homebrew_installed_packages:
   - curl
   - wrk
   - zsh-history-substring-search
+  - unzip
 
 homebrew_cask_apps:
   - docker
@@ -45,24 +53,61 @@ homebrew_cask_apps:
   - visual-studio-code
   - spotify
   - zoom
+  - dbeaver-community
+  - authy
+  - teamviewer
+  - postman
+  - obs
 
-# mas_installed_apps:
-#   - { id: 1352778147, name: "Bitwarden" }
-#   - { id: 1444383602, name: "GoodNotes 5" }
-#   - { id: 462054704, name: "Microsoft Word" }
-#   - { id: 462062816, name: "Microsoft Powerpoint" }
-#   - { id: 462058435, name: "Microsoft Excel" }
+mas_installed_apps:
+  - { id: 1352778147, name: "Bitwarden" }
+  - { id: 1444383602, name: "GoodNotes 5" }
+  - { id: 747648890, name: "Telegram" }
+  - { id: 1147396723, name: "Whatsapp Desktop" }
+  - { id: 1147396723, name: "Whatsapp Desktop" }
+  - { id: 462054704, name: "Microsoft Word" }
+  - { id: 462062816, name: "Microsoft Powerpoint" }
+  - { id: 462058435, name: "Microsoft Excel" }
+  - { id: 1451685025, name: "Wireguard" }
+  - { id: 408981434, name: "iMovie" }
+  - { id: 1295203466, name: "Microsoft Remote Desktop" }
+  - { id: 1085114709, name: "Parallels Desktop" }
+
+dockitems_remove:
+  - Music
+  - Reminders
+  - Contacts
+  - Facetime
+  - TV
+  - Podcasts
+  - 'App Store'
+  - Messages
+  - Maps
+  - FaceTime
+  - Photos
 
 dockitems_persist:
-  - name: "Sublime Text"
-    path: "/Applications/Sublime Text.app/"
+  - name: "Telegram"  
+    path: "/Applications/Telegram.app/"
+    pos: 2
+  - name: "Whatsapp"
+    path: "/Applications/Whatsapp.app/"
+    pos: 3
+  - name: "Google Chrome"
+    path: "/Applications/Google Chrome.app/"
+    pos: 4
+  - name: "Bitwarden"
+    path: "/Applications/Bitwarden.app/"
     pos: 5
   - name: "Visual Studio Code"
     path: "/Applications/Visual Studio Code.app/"
+    pos: 5
+  - name: "Authy Desktop"
+    path: "/Applications/Authy Desktop.app/"
     pos: 6
-  - name: "Bitwarden"
-    path: "/Applications/Bitwarden.app/"
-    pos: 4
-  - name: "Google Chrome"
-    path: "/Applications/Google Chrome.app/"
-    pos: 3
+  - name: "Spotify"
+    path: "/Applications/Spotify.app/"
+    pos: 7
+  - name: "iTerm"
+    path: "/Applications/iTerm.app/"
+    pos: 8
