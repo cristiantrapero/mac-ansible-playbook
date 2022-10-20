@@ -4,11 +4,11 @@ configure_dotfiles: true
 configure_terminal: true
 configure_osx: true
 configure_dock: true
-configure_sudoers: true
+configure_sudoers: false
 
 dotfiles_repo: https://github.com/cristiantrapero/dotfiles.git
 dotfiles_repo_accept_hostkey: true
-dotfiles_repo_local_destination: ~/repos/dotfiles
+dotfiles_repo_local_destination: ~/.dotfiles
 dotfiles_files:
   - .zshrc
   - .gitignore
@@ -43,6 +43,8 @@ homebrew_cask_apps:
   - appcleaner
   - iterm2
   - visual-studio-code
+  - spotify
+  - zoom
 
 # mas_installed_apps:
 #   - { id: 1352778147, name: "Bitwarden" }
