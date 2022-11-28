@@ -45,13 +45,13 @@ homebrew_installed_packages:
   - awscli
 
 homebrew_cask_apps:
+  - appcleaner
   - docker
   - firefox
   - google-chrome
   - slack
   - sublime-text
   - rectangle
-  - appcleaner
   - iterm2
   - visual-studio-code
   - spotify
@@ -61,6 +61,10 @@ homebrew_cask_apps:
   - teamviewer
   - postman
   - obs
+  - vlc
+  - protonvpn
+  - ultimaker-cura
+  - steam
 
 mas_installed_apps:
   - { id: 1352778147, name: "Bitwarden" }
@@ -75,6 +79,8 @@ mas_installed_apps:
   - { id: 408981434, name: "iMovie" }
   - { id: 1295203466, name: "Microsoft Remote Desktop" }
   - { id: 1085114709, name: "Parallels Desktop" }
+  - { id: 937984704, name: "Amphetamine" }
+  - { id: 425424353, name: "The Unarchiver" }
 
 dockitems_remove:
   - Music
