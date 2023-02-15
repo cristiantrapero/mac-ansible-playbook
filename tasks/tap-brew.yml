@@ -1,0 +1,3 @@
+- name: Hashicorp for Terraform
+  community.general.homebrew_tap:
+    name: hashicorp/tap

@@ -43,6 +43,7 @@ homebrew_installed_packages:
   - zsh-history-substring-search
   - unzip
   - awscli
+  - oath-toolkit
 
 homebrew_cask_apps:
   - appcleaner
