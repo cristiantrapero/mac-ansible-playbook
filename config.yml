@@ -64,6 +64,14 @@ mas_installed_apps:
   - { id: 1147396723, name: "Whatsapp Desktop" }
   - { id: 937984704, name: "Amphetamine" }
   - { id: 425424353, name: "The Unarchiver" }
+  - { id: 462054704, name: "Microsoft Word" }
+  - { id: 462058435, name: "Microsoft Excel" }
+  - { id: 462062816, name: "Microsoft PowerPoint" }
+  - { id: 985367838, name: "Microsoft Outlook" }
+  - { id: 784801555, name: "Microsoft OneNote" }
+  - { id: 1451685025, name: "WireGuard" }
+
+  
 
 dockitems_remove:
   - Music
